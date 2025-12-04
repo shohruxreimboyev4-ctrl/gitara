@@ -34,15 +34,15 @@ const Hero = () => {
               alt="slide-1"
             />
 
-            <div className="absolute top-[30%] right-[12%] md:right-[35%] text-white max-w-xs">
-              <h2 className="text-2xl md:text-3xl font-bold mb-1 text-primary">
+            <div className="absolute top-[15%] right-[6%] md:right-[35%] text-white max-w-[180px]">
+              <h2 className="text-xl md:text-2xl font-bold mb-1 text-primary">
                 Takamine
               </h2>
-              <p className="text-sm md:text-base mb-2 text-secondary">гитара</p>
-              <p className="text-xs md:text-sm mb-4 text-secondary">
+              <p className="text-xs md:text-sm mb-1 text-secondary">гитара</p>
+              <p className="text-[10px] md:text-xs mb-1 text-secondary">
                 винтажная 12-струнная
               </p>
-              <p className="text-xs md:text-sm mb-6 text-secondary">
+              <p className="text-[10px] md:text-xs mb-3 text-secondary">
                 GJ72CE-12BSB
               </p>
 
@@ -51,9 +51,9 @@ const Hero = () => {
                   bg-orange-500 
                   hover:bg-orange-400 
                   text-white 
-                  px-6 py-2 
+                  px-4 py-1.5 
                   rounded-md 
-                  text-sm font-medium 
+                  text-xs md:text-sm font-medium 
                   transition 
                   cursor-pointer 
                   shadow-md 
@@ -75,15 +75,15 @@ const Hero = () => {
               alt="slide-1"
             />
 
-            <div className="absolute top-[30%] right-[12%] md:right-[35%] text-white max-w-xs">
-              <h2 className="text-2xl md:text-3xl font-bold mb-1 text-primary">
+            <div className="absolute top-[15%] right-[6%] md:right-[35%] text-white max-w-[180px]">
+              <h2 className="text-xl md:text-2xl font-bold mb-1 text-primary">
                 Takamine
               </h2>
-              <p className="text-sm md:text-base mb-2 text-secondary">гитара</p>
-              <p className="text-xs md:text-sm mb-4 text-secondary">
+              <p className="text-xs md:text-sm mb-1 text-secondary">гитара</p>
+              <p className="text-[10px] md:text-xs mb-1 text-secondary">
                 винтажная 12-струнная
               </p>
-              <p className="text-xs md:text-sm mb-6 text-secondary">
+              <p className="text-[10px] md:text-xs mb-3 text-secondary">
                 GJ72CE-12BSB
               </p>
 
@@ -92,9 +92,9 @@ const Hero = () => {
                   bg-orange-500 
                   hover:bg-orange-400 
                   text-white 
-                  px-6 py-2 
+                  px-4 py-1.5 
                   rounded-md 
-                  text-sm font-medium 
+                  text-xs md:text-sm font-medium 
                   transition 
                   cursor-pointer 
                   shadow-md 
@@ -116,15 +116,15 @@ const Hero = () => {
               alt="slide-1"
             />
 
-            <div className="absolute top-[30%] right-[12%] md:right-[35%] text-white max-w-xs">
-              <h2 className="text-2xl md:text-3xl font-bold mb-1 text-primary">
+            <div className="absolute top-[15%] right-[6%] md:right-[35%] text-white max-w-[180px]">
+              <h2 className="text-xl md:text-2xl font-bold mb-1 text-primary">
                 Takamine
               </h2>
-              <p className="text-sm md:text-base mb-2 text-secondary">гитара</p>
-              <p className="text-xs md:text-sm mb-4 text-secondary">
+              <p className="text-xs md:text-sm mb-1 text-secondary">гитара</p>
+              <p className="text-[10px] md:text-xs mb-1 text-secondary">
                 винтажная 12-струнная
               </p>
-              <p className="text-xs md:text-sm mb-6 text-secondary">
+              <p className="text-[10px] md:text-xs mb-3 text-secondary">
                 GJ72CE-12BSB
               </p>
 
@@ -133,9 +133,9 @@ const Hero = () => {
                   bg-orange-500 
                   hover:bg-orange-400 
                   text-white 
-                  px-6 py-2 
+                  px-4 py-1.5 
                   rounded-md 
-                  text-sm font-medium 
+                  text-xs md:text-sm font-medium 
                   transition 
                   cursor-pointer 
                   shadow-md 
