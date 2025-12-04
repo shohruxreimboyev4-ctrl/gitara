@@ -35,6 +35,8 @@ export default function Header() {
 
   return (
     <header className="bg-[#0f0f13] text-white">
+
+      {/* TOP HEADER */}
       <div className="container mx-auto max-w-[1350px] px-4 py-2 flex items-center justify-between text-sm">
         <div className="flex items-center gap-1 text-gray-300">
           <span>Ваш город:</span>
@@ -56,7 +58,11 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="container mx-auto max-w-[1350px] px-4 py-4 flex items-center justify-between md:hidden">
+      {/* FULL-WIDTH LINE */}
+      <div className="border-b border-gray-700 w-full" />
+
+      {/* MOBILE HEADER */}
+      <div className="container mx-auto max-w-[1350px] px-4 py-4 flex items-center justify-between md:hidden bg-[#0f0f13]">
         <NavLink to="/" className="flex items-center">
           <img src={logo} alt="Logo" className="h-20 w-auto object-contain" />
         </NavLink>
@@ -74,7 +80,8 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="container mx-auto max-w-[1350px] px-4 py-4 hidden md:flex items-center justify-between">
+      {/* DESKTOP HEADER */}
+      <div className="container mx-auto max-w-[1350px] px-4 py-4 hidden md:flex items-center justify-between bg-[#0f0f13]">
         <div className="flex items-center gap-2 text-gray-300 hover:text-white cursor-pointer">
           <FiSearch className="text-xl" />
           <span className="text-sm">поиск</span>
@@ -90,7 +97,8 @@ export default function Header() {
         </div>
       </div>
 
-      <nav className="bg-[#16161c] hidden md:block">
+      {/* NAV LINKS */}
+      <nav className="bg-[#0f0f13] hidden md:block">
         <div className="container mx-auto max-w-[1350px] px-4">
           <ul className="flex items-center justify-center gap-6 py-3 text-sm uppercase tracking-wide">
             {navLinks.map((item) => (
@@ -102,6 +110,7 @@ export default function Header() {
         </div>
       </nav>
 
+      {/* MOBILE MENU */}
       <div
         className={`fixed inset-0 z-[999] flex transition-opacity duration-300 ${
           openMenu
@@ -135,95 +144,20 @@ export default function Header() {
           </div>
 
           <nav className="flex flex-col gap-4 text-base">
-            <NavLink
-              to="/catalog"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-orange-400 font-bold"
-                  : "text-orange-400 font-bold hover:text-orange-300"
-              }
-              onClick={() => setOpenMenu(false)}
-            >
-              Каталог
-            </NavLink>
-
-            <NavLink
-              to="/services"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-orange-400 font-bold"
-                  : "text-orange-400 font-bold hover:text-orange-300"
-              }
-              onClick={() => setOpenMenu(false)}
-            >
-              Услуги
-            </NavLink>
-
-            <NavLink
-              to="/contacts"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-orange-400 font-bold"
-                  : "text-orange-400 font-bold hover:text-orange-300"
-              }
-              onClick={() => setOpenMenu(false)}
-            >
-              Контакты
-            </NavLink>
-
-            <NavLink
-              to="/wholesale"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-orange-400 font-bold"
-                  : "text-orange-400 font-bold hover:text-orange-300"
-              }
-              onClick={() => setOpenMenu(false)}
-            >
-              Опт
-            </NavLink>
-
-            <div className="border-t border-gray-700 my-4"></div>
-
-            <NavLink
-              to="/delivery"
-              className={({ isActive }) =>
-                isActive ? "text-white" : "text-gray-300 hover:text-white"
-              }
-              onClick={() => setOpenMenu(false)}
-            >
-              Доставка
-            </NavLink>
-
-            <NavLink
-              to="/reviews"
-              className={({ isActive }) =>
-                isActive ? "text-white" : "text-gray-300 hover:text-white"
-              }
-              onClick={() => setOpenMenu(false)}
-            >
-              Отзывы
-            </NavLink>
-
-            <NavLink
-              to="/training"
-              className={({ isActive }) =>
-                isActive ? "text-white" : "text-gray-300 hover:text-white"
-              }
-              onClick={() => setOpenMenu(false)}
-            >
-              Обучение
-            </NavLink>
-
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive ? "text-white" : "text-gray-300 hover:text-white"
-              }
-              onClick={() => setOpenMenu(false)}
-            >
-              О нас
-            </NavLink>
+            {navLinks.map((item, idx) => (
+              <NavLink
+                key={idx}
+                to={item.to}
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-orange-400 font-bold"
+                    : "text-gray-300 hover:text-white"
+                }
+                onClick={() => setOpenMenu(false)}
+              >
+                {item.label}
+              </NavLink>
+            ))}
           </nav>
         </div>
 
